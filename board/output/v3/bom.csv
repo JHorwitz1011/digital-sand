@@ -1,0 +1,25 @@
+Comment,Designator,Footprint,LCSC Part #
+100n Unpolarized capacitor,"C1,C2,C3,C9",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+100n Unpolarized capacitor,"C4,C5,C6,C7,C8",C_0603_1608Metric,
+1u Unpolarized capacitor,C10,C_0603_1608Metric,
+1u Unpolarized capacitor,C11,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+27p Unpolarized capacitor,"C12,C13",C_0603_1608Metric,
+0.1u Unpolarized capacitor,"C14,C17",C_0603_1608Metric,
+100nF Unpolarized capacitor,"C15,C16",C_0603_1608Metric,
+10u Unpolarized capacitor,"C18,C19,C20",C_0603_1608Metric,
+10uF Unpolarized capacitor,"C21,C22",C_0603_1608Metric,
+.1uF Unpolarized capacitor,"C23,C24,C25,C26,C27,C28,C29,C30,C31,C32,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,C43,C44,C45,C46,C47",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,
+WS2812B RGB LED with integrated controller,"D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D25",LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,C2761795
+D Diode,"D26,D27",D_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C5224062
+USB_B_Micro USB Micro Type B connector,J4,Amphenol_MicroB_10118193,C132562
+2.2uH Inductor,L1,Inductor_NRS5024T2R2NMGJ,C222926
+27.4 Resistor,"R1,R2",R_0603_1608Metric,
+1k Resistor,"R3,R8",R_0603_1608Metric,
+10k Resistor,"R4,R5,R6,R7,R9",R_0603_1608Metric,
+"BOOTSEL 1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol",SW1,PTS636 6.0x3.5 Button,C2800965
+RP2040 ,U1,QFN-56_EP_7.75x7.75_Pitch0.4mm,C2040
+BMI270 ,U2,Bosch_LGA-14_3x2.5mm_P0.5mm,C2836813
+"SN74LVC1T45DRL Single-Bit Dual-Supply Bus Transceiver With Configurable Voltage Translation and 3-State Outputs, SOT-563",U3,SOT-563,C352970
+"AZ1117-3.3 1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263",U4,SOT-89-3_Handsoldering,C460428
+"W25Q128JVS 128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8",U5,SOIC-8_5.23x5.23mm_P1.27mm,C2613930
+Crystal Two pin crystal,Y1,Crystal_SMD_HC49-SD,C1985239
