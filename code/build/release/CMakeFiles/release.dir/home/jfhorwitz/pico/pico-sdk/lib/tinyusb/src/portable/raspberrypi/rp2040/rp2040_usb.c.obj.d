@@ -15,9 +15,9 @@ release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/port
  /usr/include/newlib/sys/features.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
- /home/jfhorwitz/pico/eyevend/code/build/generated/pico_base/pico/version.h \
+ /home/jfhorwitz/pico/digital-sand/code/build/generated/pico_base/pico/version.h \
  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /home/jfhorwitz/pico/eyevend/code/build/generated/pico_base/pico/config_autogen.h \
+ /home/jfhorwitz/pico/digital-sand/code/build/generated/pico_base/pico/config_autogen.h \
  /home/jfhorwitz/pico/pico-sdk/src/boards/include/boards/pico.h \
  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \

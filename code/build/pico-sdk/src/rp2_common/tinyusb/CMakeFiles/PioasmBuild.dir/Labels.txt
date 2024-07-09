@@ -1,13 +1,13 @@
 # Target labels
  PioasmBuild
 # Source files and their labels
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.rule
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild-complete.rule
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
-/home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild-complete.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
+/home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule

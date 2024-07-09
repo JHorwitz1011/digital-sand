@@ -33,6 +33,154 @@ release/CMakeFiles/release.dir/ball.cpp.obj: ../release/ball.cpp \
   /usr/include/newlib/machine/types.h \
   /usr/include/newlib/sys/stdio.h
 
+release/CMakeFiles/release.dir/bmi2.c.obj: ../release/bmi2.c \
+  ../release/bmi2.h \
+  ../release/bmi2_defs.h \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+release/CMakeFiles/release.dir/bmi270.c.obj: ../release/bmi270.c \
+  ../release/bmi270.h \
+  ../release/bmi2.h \
+  ../release/bmi2_defs.h \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+release/CMakeFiles/release.dir/common.c.obj: ../release/common.c \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/include/newlib/stdlib.h \
+  /usr/include/newlib/machine/stdlib.h \
+  /usr/include/newlib/alloca.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  generated/pico_base/pico/version.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/jfhorwitz/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  ../release/bmi2_defs.h \
+  ../release/common.h \
+  ../release/bmi2.h
+
 release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c \
   /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb_option.h \
   /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
@@ -1666,6 +1814,52 @@ release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardw
   /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
   /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 
+release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/jfhorwitz/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h
+
 release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c \
   /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
   /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -2211,7 +2405,63 @@ release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_
   /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
   /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
   /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
+
+release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/sem.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  generated/pico_base/pico/version.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/jfhorwitz/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h
 
 release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c \
   /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -2863,61 +3113,17 @@ release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_
   /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
   /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h
 
-release/CMakeFiles/release.dir/main.cpp.obj: ../release/main.cpp \
-  /home/jfhorwitz/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
-  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico.h \
-  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
-  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
-  /usr/include/newlib/c++/10.3.1/cassert \
-  /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
-  /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
-  /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h \
-  /usr/include/newlib/c++/10.3.1/pstl/pstl_config.h \
-  /usr/include/newlib/assert.h \
+release/CMakeFiles/release.dir/main.c.obj: ../release/main.c \
+  /usr/include/newlib/stdio.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/newlib.h \
   /usr/include/newlib/_newlib_version.h \
   /usr/include/newlib/sys/config.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/sys/features.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  generated/pico_base/pico/version.h \
-  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
-  generated/pico_base/pico/config_autogen.h \
-  /home/jfhorwitz/pico/pico-sdk/src/boards/include/boards/pico.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
   /usr/include/newlib/sys/cdefs.h \
   /usr/include/newlib/machine/_default_types.h \
-  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
-  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
-  /home/jfhorwitz/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
-  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
-  /usr/include/newlib/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
   /usr/include/newlib/sys/reent.h \
   /usr/include/newlib/_ansi.h \
@@ -2937,12 +3143,78 @@ release/CMakeFiles/release.dir/main.cpp.obj: ../release/main.cpp \
   /usr/include/newlib/sys/sched.h \
   /usr/include/newlib/machine/types.h \
   /usr/include/newlib/sys/stdio.h \
-  ../release/ball.hpp
+  /usr/include/newlib/math.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h \
+  /usr/include/newlib/stdlib.h \
+  /usr/include/newlib/machine/stdlib.h \
+  /usr/include/newlib/alloca.h \
+  ../release/bmi270.h \
+  ../release/bmi2.h \
+  ../release/bmi2_defs.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  ../release/common.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/include/newlib/assert.h \
+  generated/pico_base/pico/version.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/jfhorwitz/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/sem.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/jfhorwitz/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  ../release/generated/ws2812.pio.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
 
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
+../release/main.c:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c:
 
@@ -2974,6 +3246,10 @@ release/CMakeFiles/release.dir/main.cpp.obj: ../release/main.cpp \
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c:
 
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c:
+
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c:
 
 /usr/lib/gcc/arm-none-eabi/10.3.1/include/float.h:
@@ -2996,51 +3272,19 @@ release/CMakeFiles/release.dir/main.cpp.obj: ../release/main.cpp \
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
-
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
-
-/usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h:
-
-/usr/include/newlib/c++/10.3.1/cstdlib:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
-
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:
 
-/usr/include/newlib/c++/10.3.1/pstl/pstl_config.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
-
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
 
@@ -3072,63 +3316,81 @@ release/CMakeFiles/release.dir/main.cpp.obj: ../release/main.cpp \
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
 
-../release/main.cpp:
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c:
 
-/usr/include/newlib/sys/_locale.h:
+/usr/include/newlib/c++/10.3.1/stdlib.h:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:
+/usr/include/newlib/sys/_intsup.h:
+
+/usr/include/newlib/inttypes.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_usb_reset_interface/include/pico/usb_reset_interface.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h:
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/error.h:
 
 /usr/include/newlib/sys/sched.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/boards/include/boards/pico.h:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_private.h:
-
 generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/stdlib.h:
-
-/usr/include/newlib/machine/_time.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_common.h:
-
-/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h:
 
 /usr/include/newlib/assert.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/assert.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
+/home/jfhorwitz/pico/pico-sdk/src/boards/include/boards/pico.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_private.h:
 
-/usr/include/newlib/sys/_types.h:
-
-/usr/include/newlib/machine/ieeefp.h:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
+../release/common.c:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h:
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h:
+../release/bmi270.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
 
 /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico.h:
 
@@ -3140,27 +3402,39 @@ generated/pico_base/pico/config_autogen.h:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
 
+/usr/include/newlib/sys/_sigset.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/include/pico/time.h:
+
 /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/types.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb_option.h:
-
-/usr/include/newlib/sys/_sigset.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/include/pico/time.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h:
-
-/usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h:
-
-/usr/include/newlib/string.h:
+../release/bmi2.c:
 
 /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h:
 
+/usr/include/newlib/alloca.h:
+
+/usr/include/newlib/sys/reent.h:
+
 /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:
+
+/usr/include/newlib/sys/_types.h:
+
+/usr/include/newlib/machine/ieeefp.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
 
 /usr/include/newlib/sys/config.h:
 
@@ -3176,21 +3450,47 @@ generated/pico_base/pico/version.h:
 
 /usr/include/newlib/machine/_default_types.h:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:
+../release/bmi2_defs.h:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_verify.h:
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
 
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/include/pico/util/datetime.h:
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb_option.h:
 
 /usr/include/newlib/_ansi.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
 
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h:
+
+/usr/include/newlib/sys/cdefs.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c:
+
+/usr/include/newlib/sys/features.h:
+
 /home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include/pico/config.h:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c:
+/usr/include/newlib/c++/10.3.1/cstdlib:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/include/pico/util/queue.h:
+
+/usr/include/newlib/strings.h:
+
+/usr/include/newlib/sys/stdio.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:
 
@@ -3200,33 +3500,49 @@ generated/pico_base/pico/version.h:
 
 /usr/include/newlib/machine/endian.h:
 
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
+
 /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
 
 /usr/include/newlib/machine/_types.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/include/pico/float.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/usb.h:
+
+/usr/include/newlib/sys/lock.h:
 
 /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/usb.h:
 
+../release/bmi2.h:
+
 /usr/include/newlib/sys/_timespec.h:
 
 /usr/include/newlib/sys/_pthreadtypes.h:
+
+/usr/include/newlib/c++/10.3.1/pstl/pstl_config.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
+
+../release/bmi270.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
 
 /usr/include/newlib/machine/_endian.h:
 
 /usr/include/newlib/sys/select.h:
-
-/usr/include/newlib/c++/10.3.1/cassert:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/include/pico/util/queue.h:
-
-/usr/include/newlib/strings.h:
-
-/usr/include/newlib/sys/stdio.h:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:
 
@@ -3238,11 +3554,11 @@ generated/pico_base/pico/version.h:
 
 /usr/include/newlib/sys/timespec.h:
 
+/usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h:
+
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
 
@@ -3256,21 +3572,97 @@ generated/pico_base/pico/version.h:
 
 /usr/include/newlib/machine/types.h:
 
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/sem.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
+
+/usr/include/newlib/newlib.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/include/pico/util/datetime.h:
+
+../release/common.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h:
+
+../release/generated/ws2812.pio.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_verify.h:
+
+/usr/include/newlib/machine/_time.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_common.h:
+
+/usr/include/newlib/string.h:
+
+/usr/include/newlib/sys/_locale.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
+
+/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_types.h:
+
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_debug.h:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c:
 
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
-
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
 
 /usr/include/newlib/sys/string.h:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_timeout.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c:
 
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c:
 
@@ -3278,19 +3670,11 @@ generated/pico_base/pico/version.h:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/osal/osal.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h:
-
-/usr/include/newlib/sys/cdefs.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
-
 /home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c:
 
 /home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
+
+/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h:
 
@@ -3306,12 +3690,6 @@ generated/pico_base/pico/version.h:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c:
 
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_types.h:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
-
 /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h:
 
 /usr/include/newlib/_newlib_version.h:
@@ -3319,10 +3697,6 @@ generated/pico_base/pico/version.h:
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c:
 
@@ -3334,14 +3708,6 @@ generated/pico_base/pico/version.h:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/dcd.h:
 
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
-
-/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.h:
-
 /usr/include/newlib/sys/_timeval.h:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid.h:
@@ -3351,67 +3717,3 @@ generated/pico_base/pico/version.h:
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c:
 
 /home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h:
-
-/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/include/pico/float.h:
-
-/usr/include/newlib/sys/lock.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/usb.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
-
-/usr/include/newlib/newlib.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
-
-/usr/include/newlib/sys/reent.h:
-
-/usr/include/newlib/alloca.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_usb_reset_interface/include/pico/usb_reset_interface.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/include/pico/sem.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c:
-
-/usr/include/newlib/inttypes.h:
-
-/usr/include/newlib/c++/10.3.1/stdlib.h:
-
-/usr/include/newlib/sys/_intsup.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c:
-
-/usr/include/newlib/sys/features.h:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c:
-
-/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c:

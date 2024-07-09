@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jfhorwitz/pico/eyevend/code
+CMAKE_SOURCE_DIR = /home/jfhorwitz/pico/digital-sand/code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jfhorwitz/pico/eyevend/code/build
+CMAKE_BINARY_DIR = /home/jfhorwitz/pico/digital-sand/code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jfhorwitz/pico/eyevend/code/build/CMakeFiles /home/jfhorwitz/pico/eyevend/code/build/pico-sdk/src/rp2_common/pico_cyw43_driver//CMakeFiles/progress.marks
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jfhorwitz/pico/eyevend/code/build/CMakeFiles 0
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles /home/jfhorwitz/pico/digital-sand/code/build/pico-sdk/src/rp2_common/pico_cyw43_driver//CMakeFiles/progress.marks
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/clean
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/preinstall
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/preinstall
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: pico-sdk/src/rp2_common/pico_cyw43_d
 
 # fast build rule for target.
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
 # Help Target
@@ -150,6 +150,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

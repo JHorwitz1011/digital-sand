@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
-  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "/home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "/home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -40,6 +40,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
+  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -70,6 +71,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "../release/generated"
   "/home/jfhorwitz/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/jfhorwitz/pico/pico-sdk/src/common/pico_base/include"
@@ -116,10 +118,15 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/hw"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/include"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/jfhorwitz/pico/digital-sand/code/release/bmi2.c" "release/CMakeFiles/release.dir/bmi2.c.obj" "gcc" "release/CMakeFiles/release.dir/bmi2.c.obj.d"
+  "/home/jfhorwitz/pico/digital-sand/code/release/bmi270.c" "release/CMakeFiles/release.dir/bmi270.c.obj" "gcc" "release/CMakeFiles/release.dir/bmi270.c.obj.d"
+  "/home/jfhorwitz/pico/digital-sand/code/release/common.c" "release/CMakeFiles/release.dir/common.c.obj" "gcc" "release/CMakeFiles/release.dir/common.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d"
@@ -154,6 +161,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d"
@@ -168,6 +176,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
+  "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d"
@@ -178,9 +187,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
-  "/home/jfhorwitz/pico/eyevend/code/release/ball.cpp" "release/CMakeFiles/release.dir/ball.cpp.obj" "gcc" "release/CMakeFiles/release.dir/ball.cpp.obj.d"
+  "/home/jfhorwitz/pico/digital-sand/code/release/main.c" "release/CMakeFiles/release.dir/main.c.obj" "gcc" "release/CMakeFiles/release.dir/main.c.obj.d"
+  "/home/jfhorwitz/pico/digital-sand/code/release/ball.cpp" "release/CMakeFiles/release.dir/ball.cpp.obj" "gcc" "release/CMakeFiles/release.dir/ball.cpp.obj.d"
   "/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
-  "/home/jfhorwitz/pico/eyevend/code/release/main.cpp" "release/CMakeFiles/release.dir/main.cpp.obj" "gcc" "release/CMakeFiles/release.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

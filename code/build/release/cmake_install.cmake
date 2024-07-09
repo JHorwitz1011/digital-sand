@@ -1,4 +1,4 @@
-# Install script for directory: /home/jfhorwitz/pico/eyevend/code/release
+# Install script for directory: /home/jfhorwitz/pico/digital-sand/code/release
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

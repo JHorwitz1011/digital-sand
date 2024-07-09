@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jfhorwitz/pico/eyevend/code
+CMAKE_SOURCE_DIR = /home/jfhorwitz/pico/digital-sand/code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jfhorwitz/pico/eyevend/code/build
+CMAKE_BINARY_DIR = /home/jfhorwitz/pico/digital-sand/code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jfhorwitz/pico/eyevend/code/build/CMakeFiles /home/jfhorwitz/pico/eyevend/code/build/release//CMakeFiles/progress.marks
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jfhorwitz/pico/eyevend/code/build/CMakeFiles 0
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles /home/jfhorwitz/pico/digital-sand/code/build/release//CMakeFiles/progress.marks
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/clean
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/preinstall
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/preinstall
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 release/CMakeFiles/release.dir/rule:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/CMakeFiles/release.dir/rule
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/CMakeFiles/release.dir/rule
 .PHONY : release/CMakeFiles/release.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,26 @@ release: release/CMakeFiles/release.dir/rule
 
 # fast build rule for target.
 release/fast:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/build
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/build
 .PHONY : release/fast
 
 # Convenience name for target.
+release/CMakeFiles/release_ws2812_pio_h.dir/rule:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/CMakeFiles/release_ws2812_pio_h.dir/rule
+.PHONY : release/CMakeFiles/release_ws2812_pio_h.dir/rule
+
+# Convenience name for target.
+release_ws2812_pio_h: release/CMakeFiles/release_ws2812_pio_h.dir/rule
+.PHONY : release_ws2812_pio_h
+
+# fast build rule for target.
+release_ws2812_pio_h/fast:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release_ws2812_pio_h.dir/build.make release/CMakeFiles/release_ws2812_pio_h.dir/build
+.PHONY : release_ws2812_pio_h/fast
+
+# Convenience name for target.
 release/CMakeFiles/ELF2UF2Build.dir/rule:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/CMakeFiles/ELF2UF2Build.dir/rule
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 release/CMakeFiles/ELF2UF2Build.dir/rule
 .PHONY : release/CMakeFiles/ELF2UF2Build.dir/rule
 
 # Convenience name for target.
@@ -141,7 +155,7 @@ ELF2UF2Build: release/CMakeFiles/ELF2UF2Build.dir/rule
 
 # fast build rule for target.
 ELF2UF2Build/fast:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/ELF2UF2Build.dir/build.make release/CMakeFiles/ELF2UF2Build.dir/build
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/ELF2UF2Build.dir/build.make release/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
 
 ball.obj: ball.cpp.obj
@@ -149,7 +163,7 @@ ball.obj: ball.cpp.obj
 
 # target to build an object file
 ball.cpp.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/ball.cpp.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/ball.cpp.obj
 .PHONY : ball.cpp.obj
 
 ball.i: ball.cpp.i
@@ -157,7 +171,7 @@ ball.i: ball.cpp.i
 
 # target to preprocess a source file
 ball.cpp.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/ball.cpp.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/ball.cpp.i
 .PHONY : ball.cpp.i
 
 ball.s: ball.cpp.s
@@ -165,15 +179,87 @@ ball.s: ball.cpp.s
 
 # target to generate assembly for a file
 ball.cpp.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/ball.cpp.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/ball.cpp.s
 .PHONY : ball.cpp.s
+
+bmi2.obj: bmi2.c.obj
+.PHONY : bmi2.obj
+
+# target to build an object file
+bmi2.c.obj:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/bmi2.c.obj
+.PHONY : bmi2.c.obj
+
+bmi2.i: bmi2.c.i
+.PHONY : bmi2.i
+
+# target to preprocess a source file
+bmi2.c.i:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/bmi2.c.i
+.PHONY : bmi2.c.i
+
+bmi2.s: bmi2.c.s
+.PHONY : bmi2.s
+
+# target to generate assembly for a file
+bmi2.c.s:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/bmi2.c.s
+.PHONY : bmi2.c.s
+
+bmi270.obj: bmi270.c.obj
+.PHONY : bmi270.obj
+
+# target to build an object file
+bmi270.c.obj:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/bmi270.c.obj
+.PHONY : bmi270.c.obj
+
+bmi270.i: bmi270.c.i
+.PHONY : bmi270.i
+
+# target to preprocess a source file
+bmi270.c.i:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/bmi270.c.i
+.PHONY : bmi270.c.i
+
+bmi270.s: bmi270.c.s
+.PHONY : bmi270.s
+
+# target to generate assembly for a file
+bmi270.c.s:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/bmi270.c.s
+.PHONY : bmi270.c.s
+
+common.obj: common.c.obj
+.PHONY : common.obj
+
+# target to build an object file
+common.c.obj:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/common.c.obj
+.PHONY : common.c.obj
+
+common.i: common.c.i
+.PHONY : common.i
+
+# target to preprocess a source file
+common.c.i:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/common.c.i
+.PHONY : common.c.i
+
+common.s: common.c.s
+.PHONY : common.s
+
+# target to generate assembly for a file
+common.c.s:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/common.c.s
+.PHONY : common.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -181,7 +267,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/jf
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -189,7 +275,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/jf
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -197,7 +283,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/jfho
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -205,7 +291,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/jfhorw
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -213,7 +299,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/jfhorw
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -221,7 +307,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/jfho
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -229,7 +315,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/jfhorw
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -237,7 +323,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/jfhorw
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -245,7 +331,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/j
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -253,7 +339,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/jfh
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -261,7 +347,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/jfh
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -269,7 +355,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/jfho
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -277,7 +363,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/jfhorw
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -285,7 +371,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/jfhorw
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -293,7 +379,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/jf
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -301,7 +387,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/jfho
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -309,7 +395,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/jfho
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -317,7 +403,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/jfho
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -325,7 +411,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/jfhorw
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -333,7 +419,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/jfhorw
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
@@ -341,7 +427,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: hom
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -349,7 +435,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -357,7 +443,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
@@ -365,7 +451,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/jfho
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -373,7 +459,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/jfhorw
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -381,7 +467,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/jfhorw
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -389,7 +475,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: hom
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -397,7 +483,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -405,7 +491,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -413,7 +499,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: hom
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -421,7 +507,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -429,7 +515,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
@@ -437,7 +523,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -445,7 +531,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/jf
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -453,7 +539,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/jf
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -461,7 +547,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/jfhorwit
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -469,7 +555,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/jfhorwitz/
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -477,7 +563,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/jfhorwitz/
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -485,7 +571,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/jfhorwitz/pic
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -493,7 +579,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/jfhorwitz/pico/
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -501,7 +587,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/jfhorwitz/pico/
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -509,7 +595,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/jfhor
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -517,7 +603,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/jfhorwi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -525,7 +611,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/jfhorwi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj
@@ -533,7 +619,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pi
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i
@@ -541,7 +627,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s
@@ -549,7 +635,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/pio_usb/dcd_pio_usb.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -557,7 +643,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -565,7 +651,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -573,7 +659,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -581,7 +667,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -589,7 +675,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -597,7 +683,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -605,7 +691,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/jfhorwitz/pico/pico-
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -613,7 +699,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/jfhorwitz/pico/pico-sd
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -621,7 +707,7 @@ home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/jfhorwitz/pico/pico-sd
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -629,7 +715,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/jfh
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -637,7 +723,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/jfhor
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -645,7 +731,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/jfhor
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -653,7 +739,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/jfhorwitz/
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -661,7 +747,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/jfhorwitz/pi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -669,7 +755,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/jfhorwitz/pi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -677,7 +763,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/jfhorwitz/pico
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -685,7 +771,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.i: home/jfhorwitz/pico/p
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -693,7 +779,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.s: home/jfhorwitz/pico/p
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -701,7 +787,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.obj: home/jfhorwitz/pico/p
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -709,7 +795,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.i: home/jfhorwitz/pico/pic
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -717,7 +803,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.s: home/jfhorwitz/pico/pic
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -725,7 +811,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.obj: home/jfhorwitz/pico/
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -733,7 +819,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.i: home/jfhorwitz/pico/pi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -741,7 +827,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.s: home/jfhorwitz/pico/pi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_time/time.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -749,7 +835,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/jfhor
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -757,7 +843,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/jfhorwi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -765,7 +851,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/jfhorwi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -773,7 +859,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.obj: home/jfhorwitz/p
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -781,7 +867,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.i: home/jfhorwitz/pic
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -789,7 +875,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.s: home/jfhorwitz/pic
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -797,7 +883,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.obj: home/jfhorwitz/pico
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -805,7 +891,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.i: home/jfhorwitz/pico/p
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -813,7 +899,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.s: home/jfhorwitz/pico/p
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.obj: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -821,7 +907,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.obj: home/jfhorwitz/pico
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.i: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -829,7 +915,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.i: home/jfhorwitz/pico/p
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.s: home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -837,7 +923,7 @@ home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.s: home/jfhorwitz/pico/p
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -845,7 +931,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/jfhor
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -853,7 +939,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/jfhorwi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -861,7 +947,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/jfhorwi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -869,7 +955,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/jfh
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -877,7 +963,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/jfhor
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -885,7 +971,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/jfhor
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -893,7 +979,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/j
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -901,7 +987,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/jfhor
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -909,7 +995,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/jfhorwi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -917,7 +1003,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/jfhorwi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -925,7 +1011,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/jfhorwi
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -933,7 +1019,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/jfhorwitz
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -941,7 +1027,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/jfhorwitz
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
@@ -949,7 +1035,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/jfhorwitz
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -957,7 +1043,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/jfhorwitz/p
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -965,7 +1051,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/jfhorwitz/p
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -973,7 +1059,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/jfhorwitz
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -981,7 +1067,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/jfhorwitz/p
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -989,7 +1075,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/jfhorwitz/p
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -997,15 +1083,39 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: 
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+
+# target to build an object file
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1013,7 +1123,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/jfhorwitz/p
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1021,7 +1131,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/jfhorwitz/p
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1029,7 +1139,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/jfhorwi
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1037,7 +1147,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/jfhorwitz
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1045,7 +1155,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/jfhorwitz
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1053,7 +1163,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/jfhor
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1061,7 +1171,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/jfhorwi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1069,7 +1179,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/jfhorwi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1077,7 +1187,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/jfhorwi
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1085,7 +1195,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/jfhorwitz
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1093,7 +1203,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/jfhorwitz
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1101,7 +1211,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/jfhorwi
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1109,7 +1219,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/jfhorwitz
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1117,7 +1227,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/jfhorwitz
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1125,7 +1235,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1133,7 +1243,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/j
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1141,7 +1251,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/j
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1149,7 +1259,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/jfhorwi
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1157,7 +1267,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/jfhorwitz
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1165,7 +1275,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/jfhorwitz
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -1173,7 +1283,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1181,7 +1291,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/jfhor
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1189,7 +1299,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/jfhorwi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1197,7 +1307,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/jfhorwi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -1205,7 +1315,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/jfhor
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1213,7 +1323,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/j
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1221,7 +1331,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: hom
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1229,7 +1339,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1237,7 +1347,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1245,7 +1355,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/jf
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1253,7 +1363,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/jfho
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1261,7 +1371,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/jfho
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1269,7 +1379,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: 
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -1277,7 +1387,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumerati
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1285,7 +1395,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumerati
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1293,7 +1403,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumerati
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1301,7 +1411,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/jfh
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1309,7 +1419,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1317,7 +1427,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/jf
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1325,7 +1435,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/jf
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1333,7 +1443,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/jfho
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1341,7 +1451,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/jfhorw
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1349,7 +1459,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/jfhorw
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1357,7 +1467,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: ho
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1365,7 +1475,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -1373,7 +1483,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/jf
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1381,7 +1491,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/jfho
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1389,7 +1499,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/jfho
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1397,15 +1507,39 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
+
+# target to build an object file
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1413,7 +1547,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/jfhor
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1421,7 +1555,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/jfhor
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1429,7 +1563,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/jfhorwi
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1437,7 +1571,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/jfhorwitz
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1445,7 +1579,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/jfhorwitz
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1453,7 +1587,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/jfhor
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1461,7 +1595,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/jfhorwi
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1469,7 +1603,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/jfhorwi
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1477,7 +1611,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: 
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1485,7 +1619,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: ho
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1493,7 +1627,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: ho
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1501,7 +1635,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/jf
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1509,7 +1643,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: h
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1517,7 +1651,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: hom
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1525,7 +1659,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: hom
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1533,7 +1667,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/jfhorwitz
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1541,7 +1675,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/jfhorwitz/p
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1549,7 +1683,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/jfhorwitz/p
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
@@ -1557,7 +1691,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: 
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -1565,7 +1699,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: ho
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -1573,7 +1707,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: ho
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
@@ -1581,7 +1715,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/j
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -1589,7 +1723,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/jfh
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -1597,7 +1731,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/jfh
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
@@ -1605,7 +1739,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -1613,7 +1747,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -1621,7 +1755,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1629,7 +1763,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/jfhorwi
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1637,7 +1771,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/jfhorwitz
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1645,7 +1779,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/jfhorwitz
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -1653,7 +1787,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/j
 
 # target to build an object file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1661,7 +1795,7 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/jfh
 
 # target to preprocess a source file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1669,32 +1803,32 @@ home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/jfh
 
 # target to generate assembly for a file
 home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-main.obj: main.cpp.obj
+main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
-main.cpp.obj:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+main.c.obj:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/main.c.obj
+.PHONY : main.c.obj
 
-main.i: main.cpp.i
+main.i: main.c.i
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.c.i:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/main.c.i
+.PHONY : main.c.i
 
-main.s: main.cpp.s
+main.s: main.c.s
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.c.s:
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(MAKE) $(MAKESILENT) -f release/CMakeFiles/release.dir/build.make release/CMakeFiles/release.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -1705,10 +1839,20 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ELF2UF2Build"
+	@echo "... release_ws2812_pio_h"
 	@echo "... release"
 	@echo "... ball.obj"
 	@echo "... ball.i"
 	@echo "... ball.s"
+	@echo "... bmi2.obj"
+	@echo "... bmi2.i"
+	@echo "... bmi2.s"
+	@echo "... bmi270.obj"
+	@echo "... bmi270.i"
+	@echo "... bmi270.s"
+	@echo "... common.obj"
+	@echo "... common.i"
+	@echo "... common.s"
 	@echo "... home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/jfhorwitz/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1813,6 +1957,9 @@ help:
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
+	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj"
+	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
@@ -1863,6 +2010,9 @@ help:
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
+	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
+	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.i"
 	@echo "... home/jfhorwitz/pico/pico-sdk/src/rp2_common/pico_platform/platform.s"
@@ -1911,6 +2061,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

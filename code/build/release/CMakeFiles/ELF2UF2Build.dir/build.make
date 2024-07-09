@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jfhorwitz/pico/eyevend/code
+CMAKE_SOURCE_DIR = /home/jfhorwitz/pico/digital-sand/code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jfhorwitz/pico/eyevend/code/build
+CMAKE_BINARY_DIR = /home/jfhorwitz/pico/digital-sand/code/build
 
 # Utility rule file for ELF2UF2Build.
 
@@ -76,51 +76,51 @@ release/CMakeFiles/ELF2UF2Build-complete: release/elf2uf2/src/ELF2UF2Build-stamp
 release/CMakeFiles/ELF2UF2Build-complete: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 release/CMakeFiles/ELF2UF2Build-complete: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 release/CMakeFiles/ELF2UF2Build-complete: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/eyevend/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/ELF2UF2Build-complete
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/ELF2UF2Build-complete
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
 
 release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/eyevend/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
-	cd /home/jfhorwitz/pico/eyevend/code/build/elf2uf2 && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
+	cd /home/jfhorwitz/pico/digital-sand/code/build/elf2uf2 && $(MAKE)
 
 release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: release/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt
 release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/eyevend/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
-	cd /home/jfhorwitz/pico/eyevend/code/build/elf2uf2 && /usr/bin/cmake -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake "-GUnix Makefiles" /home/jfhorwitz/pico/pico-sdk/tools/elf2uf2
-	cd /home/jfhorwitz/pico/eyevend/code/build/elf2uf2 && /usr/bin/cmake -E touch /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
+	cd /home/jfhorwitz/pico/digital-sand/code/build/elf2uf2 && /usr/bin/cmake -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake "-GUnix Makefiles" /home/jfhorwitz/pico/pico-sdk/tools/elf2uf2
+	cd /home/jfhorwitz/pico/digital-sand/code/build/elf2uf2 && /usr/bin/cmake -E touch /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 
 release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/eyevend/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E echo_append
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E echo_append
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 
 release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/eyevend/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
-	cd /home/jfhorwitz/pico/eyevend/code/build/elf2uf2 && /usr/bin/cmake -E echo_append
-	cd /home/jfhorwitz/pico/eyevend/code/build/elf2uf2 && /usr/bin/cmake -E touch /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
+	cd /home/jfhorwitz/pico/digital-sand/code/build/elf2uf2 && /usr/bin/cmake -E echo_append
+	cd /home/jfhorwitz/pico/digital-sand/code/build/elf2uf2 && /usr/bin/cmake -E touch /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
 
 release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/eyevend/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/pico-sdk/tools/elf2uf2
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/eyevend/code/build/elf2uf2
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/tmp
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/pico-sdk/tools/elf2uf2
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/digital-sand/code/build/elf2uf2
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/tmp
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E make_directory /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 
 release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/eyevend/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E echo_append
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E echo_append
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 
 release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update: release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/eyevend/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E echo_append
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/eyevend/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jfhorwitz/pico/digital-sand/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E echo_append
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && /usr/bin/cmake -E touch /home/jfhorwitz/pico/digital-sand/code/build/release/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
 
 ELF2UF2Build: release/CMakeFiles/ELF2UF2Build
 ELF2UF2Build: release/CMakeFiles/ELF2UF2Build-complete
@@ -139,10 +139,10 @@ release/CMakeFiles/ELF2UF2Build.dir/build: ELF2UF2Build
 .PHONY : release/CMakeFiles/ELF2UF2Build.dir/build
 
 release/CMakeFiles/ELF2UF2Build.dir/clean:
-	cd /home/jfhorwitz/pico/eyevend/code/build/release && $(CMAKE_COMMAND) -P CMakeFiles/ELF2UF2Build.dir/cmake_clean.cmake
+	cd /home/jfhorwitz/pico/digital-sand/code/build/release && $(CMAKE_COMMAND) -P CMakeFiles/ELF2UF2Build.dir/cmake_clean.cmake
 .PHONY : release/CMakeFiles/ELF2UF2Build.dir/clean
 
 release/CMakeFiles/ELF2UF2Build.dir/depend:
-	cd /home/jfhorwitz/pico/eyevend/code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jfhorwitz/pico/eyevend/code /home/jfhorwitz/pico/eyevend/code/release /home/jfhorwitz/pico/eyevend/code/build /home/jfhorwitz/pico/eyevend/code/build/release /home/jfhorwitz/pico/eyevend/code/build/release/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jfhorwitz/pico/digital-sand/code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jfhorwitz/pico/digital-sand/code /home/jfhorwitz/pico/digital-sand/code/release /home/jfhorwitz/pico/digital-sand/code/build /home/jfhorwitz/pico/digital-sand/code/build/release /home/jfhorwitz/pico/digital-sand/code/build/release/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : release/CMakeFiles/ELF2UF2Build.dir/depend
 
